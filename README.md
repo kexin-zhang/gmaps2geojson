@@ -16,7 +16,7 @@ Written using Python 3.6. Install requirements with `pip install -r gmaps2geojso
 >>> writer.save("example.geojson")
 ```
 
--`query(src, dest, custom_label=None)`: Use the query function to get a list of coordinates -- derived from the first result on Google Maps between the provided source and destination. Returns list of (latitude, longitude) coordinates
--`write(filename)`: Outputs geojson of all queried routes. All routes have a `name` property in the format of `<src> to <dest>` unless a custom_label was specified when querying.
+* `query(src, dest, custom_label=None)`: Use the query function to get a list of coordinates -- derived from the first result on Google Maps between the provided source and destination. Returns list of (latitude, longitude) coordinates
+* `write(filename)`: Outputs geojson of all queried routes. All routes have a `name` property in the format of `<src> to <dest>` unless a custom_label was specified when querying.
 
 See `example.py` and `example.geojson`.
