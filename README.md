@@ -5,6 +5,11 @@ Super simple python utility for getting GeoJSON from Google Maps routes.
 ## Setup
 Written using Python 3.6. Install requirements with `pip install -r gmaps2geojson/requirements.txt`.
 
+Get an API key for the [Google Maps Directions API](https://developers.google.com/maps/documentation/directions/start). Set this as an environment variable.
+```
+export GMAPS_KEY='YOUR API KEY HERE'
+```
+
 ## Usage
 ```
 >>> import gmaps2geojson

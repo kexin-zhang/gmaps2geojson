@@ -1,13 +1,14 @@
 import requests
 import polyline
 import json
+import os
 
 class Writer:
     def __init__(self):
         self.features = []
 
     def query(self, src, dest, custom_label = None):
-        request_url = 'https://maps.googleapis.com/maps/api/directions/json?origin="{0}"&destination="{1}"'.format(src, dest)
+        request_url = 'https://maps.googleapis.com/maps/api/directions/json?origin="{0}"&destination="{1}"&key={2}'.format(src, dest, os.environ["GMAPS_KEY"])
         try:
             r = requests.get(request_url)
             results = r.json()
